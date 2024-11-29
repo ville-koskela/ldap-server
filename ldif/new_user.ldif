@@ -1,0 +1,14 @@
+dn: uid=newuser,ou=users,dc=example,dc=com
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: New User
+givenName: New
+sn: User
+uid: newuser
+uidNumber: 1001
+gidNumber: 1001
+homeDirectory: /home/newuser
+loginShell: /bin/bash
+userPassword: newpassword
+

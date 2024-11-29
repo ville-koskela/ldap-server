@@ -1,0 +1,31 @@
+{
+  "name": "ldap-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint '**/*.{js,jsx,json,ts,tsx}' --quiet",
+    "test": "node --import tsx --test src/*.test.ts",
+    "dev": "tsx --watch --env-file=.env src/index.ts",
+    "start": "npm run build && node --env-file=.env build/index.js",
+    "build": "tsc",
+    "prepare": "husky"
+  },
+  "author": "Ville Koskela",
+  "license": "MIT",
+  "devDependencies": {
+    "@operationmonkey/commitlint-config-core": "2.0.0",
+    "@operationmonkey/eslint-config-core": "2.0.0",
+    "@operationmonkey/lint-staged-config-core": "2.0.0",
+    "@operationmonkey/prettier-config-core": "2.0.0",
+    "@operationmonkey/tsconfig-core": "2.1.1",
+    "@types/ldapjs": "3.0.6",
+    "@types/node": "20.12.5",
+    "husky": "9.0.11",
+    "tsx": "4.7.2"
+  },
+  "dependencies": {
+    "ldapjs": "3.0.7",
+    "zod": "3.22.4"
+  }
+}
