@@ -1,10 +1,5 @@
 import ldap from "ldapjs";
-import type { InvalidCredentialsError, SearchEntry } from "ldapjs";
-import * as z from "zod";
 
-import type { Database } from "../../interfaces/database.interface";
-import type { Logger } from "../../interfaces/logger.interface";
-import type { Env } from "../../schemas/env";
 import { lowerCasePosixAccountSchema, posixAccountSchema } from "../../schemas/posix";
 import { posixAccountToSearchResult } from "../../utils/toSearchResult";
 
